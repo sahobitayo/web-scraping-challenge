@@ -21,7 +21,7 @@ The [Jupyter notebook file](https://github.com/sahobitayo/web-scraping-challenge
 - Script visits the Mars Weather twitter account and scrapes the latest Mars weather tweet.
 
 ### [Mars Facts](https://space-facts.com/mars/)
--Script visit the Mars Facts webpage and uses Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc. Then, used Pandas to convert the data to a HTML table string
+- Script visit the Mars Facts webpage and uses Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc. Then, used Pandas to convert the data to a HTML table string
 
 ### [Mars Hemispheres](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars)
 - Script visits the USGS Astrogeology site and obtains the full resolution images for each of Mar's hemispheres.
