@@ -33,11 +33,12 @@ warnings.filterwarnings('ignore')
 #     return Browser("chrome", **executable_path, headless=False)
 
 
+def scrape():
 
     # Assign path for chromedriver
-executable_path = {'executable_path': '/c/Program Files/Chrome_extension/chromedriver'}
-browser = Browser('chrome')
-def scrape():
+    executable_path = {'executable_path': '/c/Program Files/Chrome_extension/chromedriver'}
+    browser = Browser('chrome')
+
 
     # In[ ]:
 
@@ -158,8 +159,8 @@ def scrape():
 
     #Easier Way
     # Search for most recent tweet
-    tweet= soup.find('div', attrs={"lang":"en", "dir":"auto", "class":"css-901oao r-hkyrab r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-bnwqim r-qvutc0"})
-    tweet= tweet.text
+    tweet= soup.find_all('div', attrs={"lang":"en", "dir":"auto", "class":"css-901oao r-hkyrab r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-bnwqim r-qvutc0"})
+    tweet= tweet[-2].text
     print(tweet)
 
 
@@ -201,7 +202,7 @@ def scrape():
 
 
     # Convert DataFrame to HTML
-    html_table= df.to_html("templates/mars_facts_table.html")
+    # html_table= df.to_html("templates/mars_facts_table.html")
     html_table = df.to_html()
     print(html_table)
 
