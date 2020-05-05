@@ -158,6 +158,7 @@ def scrape():
 
 
     #Easier Way
+    # The code changes/updates everytime!!!!
     # Search for most recent tweet
     tweet= soup.find_all('div', attrs={"lang":"en", "dir":"auto", "class":"css-901oao r-hkyrab r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-bnwqim r-qvutc0"})
     tweet= tweet[-2].text
