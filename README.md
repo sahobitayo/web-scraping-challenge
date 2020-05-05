@@ -1,6 +1,7 @@
 # Web-scraping-challenge
 - [Scraping](https://github.com/sahobitayo/web-scraping-challenge#scraping)
 - [MongoDB and Flask Application](https://github.com/sahobitayo/web-scraping-challenge#mongodb-and-flask-application)
+- [Screenshots](https://github.com/sahobitayo/web-scraping-challenge#screenshots)
 - [Tools Used](https://github.com/sahobitayo/web-scraping-challenge#tools-used)
 
 
@@ -34,6 +35,13 @@ After scraping the various sites for the information needed for the project, I u
 2. Create a route called /scrape, which imports the [scrape.py](https://github.com/sahobitayo/web-scraping-challenge/blob/master/Missions_to_Mars/scrape_mars.py) script.
 3. Create a route /, which queries the Mongo database and passes the mars data into an HTML template to display the data.
 4. Create a template HTML file, [index.html](https://github.com/sahobitayo/web-scraping-challenge/blob/master/Missions_to_Mars/templates/index.html) that takes the mars data dictionary and displays all of the data in the appropriate HTML elements.
+
+
+## Screenshots
+The following images are the visuals of what the final web page looks like after scraping from various sites. 
+<img src="Missions_to_Mars/mars_screenshot1.png">
+
+<img src="Missions_to_Mars/mars_screenshot2.png" >
 
 
 ## Tools Used
