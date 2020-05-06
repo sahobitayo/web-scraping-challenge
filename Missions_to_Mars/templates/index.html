@@ -26,8 +26,8 @@
         <!-- News Section -->
         <div class="container">
             <h3>Latest Mars News</h3>
-            <h6 style="color: #c1440e">{{ mars_data.latest_news_title }}</h6>
-            <p>{{ mars_data.latest_news_paragraph }}</p>
+            <h6 style="color: #c1440e">{{ mars_data.news_title }}</h6>
+            <p>{{ mars_data.news_p }}</p>
         </div>
 
         <div class="container">
@@ -44,7 +44,7 @@
                     <div class="card" style="width: 18rem;">
                         <div class="card-body text-white bg-dark">
                             <h6 class="card-title">Current Weather on Mars</h6>
-                            <p class="card-text">{{ mars_data.tweet }}</p>
+                            <p class="card-text">{{ mars_data.mars_weather }}</p>
                         </div>
 
                     </div>
@@ -78,6 +78,11 @@
                 </div>
             </div>
         </div><!-- Close main container -->
+
+        <script>
+            let tableElement = document.getElementsByClassName("dataframe");
+            tableElement[0].classList.add("table-dark", "table-striped", "table-bordered", "table-hover");
+        </script>
 
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
