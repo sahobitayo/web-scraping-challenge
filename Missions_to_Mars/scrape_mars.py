@@ -141,8 +141,16 @@ def scrape():
 
     # URL of the website being scraped
     url_5= "https://twitter.com/marswxreport?lang=en"
+    ## Alternative solution using request
+    # r= requests.get(url_5)
+    # soup= bs (r.content, 'html.parser')
+    # first_tweet= soup.find('p', attrs{'class': 'tweet-text'})
+    # tweet= first_tweet.text
+    # print(tweet)
+
+    #Solution using splinter
     browser.visit(url_5)
-    # Wait for 10 seconds
+    # Wait for 5 seconds
     time.sleep(5)
 
     html_5= browser.html
