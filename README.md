@@ -40,7 +40,7 @@ After scraping the various sites for the information needed for the project, I u
 ## Screenshots
 The following images are the visuals of what the final web page looks like after scraping from various sites. 
 
-<img src="Missions_to_Mars/mars_screenshot1.png">
+<img src="Missions_to_Mars/mars_screenshot1.png" >
 
 <img src="Missions_to_Mars/mars_screenshot2.png" >
 
